@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login1 page</title>
+</head>
+
+<body>
+    <form>
+        <input id="UserName" type="text" placeholder="username">
+        <input id="password" type="password" placeholder="password">
+        <input type="submit" value="login" onclick="show(); return false;">
+    </form>
+    <script>
+
+        function show() {
+            let u = document.getElementById("UserName").value
+            let p = document.getElementById("password").value
+            console.log(`username is ${u} \npassword is ${p}`)
+        }
+
+
+    </script>
+</body>
+
+</html>
